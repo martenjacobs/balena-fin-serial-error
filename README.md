@@ -17,7 +17,7 @@ The FTDI FT-4232H mini module cannot be used without any connections. At the ver
 
 This does not provide voltage to the IO pins, but this is not needed unless you actually want communicate with other devices.
 
-## Flash the Fin
+## Prepare app
 Create a balena application and push this repo to it using balena push or git push. You can also use local mode if you prefer. The default configuration works fine. You can also use this button:
 
 [![balena deploy button](https://www.balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/martenjacobs/balena-fin-serial-error&defaultDeviceType=fincm3)
@@ -29,6 +29,7 @@ Download and flash the development image for `balenaOS v2.58.3+rev1` or `2.51.1+
 - Insert the modem into the Fin's mPCIe slot and connect the antennas
 - Insert the SIM card into the Fin
 - Connect the Fin to the network through ethernet
+- Power up the device
 
 ## Push config using configizer
 - make sure you have balena CLI properly set up
