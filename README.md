@@ -33,7 +33,7 @@ Download and flash the development image for `balenaOS v2.58.3+rev1` or `2.51.1+
 
 ## Push config using configizer
 - make sure you have balena CLI properly set up
-- `cd` into the `configizer` folder
+- `cd` into the `configizer` folder (this is based on [software from balena](https://github.com/balena-io/configizer))
 - create a file called `batch` containing the UUID of your device. 
   For example: 
   ```bash
@@ -58,7 +58,7 @@ When the device is on-line again, log in to the device's host shell through SSH 
 journalctl -u ModemManager --all -f
 ```
 
-After some time messages like this will start appearing:
+Within 30 seconds, messages like this will start appearing:
 ```
 Dec 14 10:28:00 71edded ModemManager[1284]: transaction 0x40 aborted, but message is not abortable
 Dec 14 10:28:08 71edded ModemManager[1284]: transaction 0x10 aborted, but message is not abortable
