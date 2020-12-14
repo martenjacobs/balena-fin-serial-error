@@ -1,0 +1,11 @@
+version: '2.1'
+services:
+
+  test-case:
+    restart: always
+    build: 
+      context: ./services/test-case
+    devices:
+      - /dev/FTDI.0:/dev/FTDI.0
+      - /dev/FTDI.1:/dev/FTDI.1
+      - /dev/FTDI.3:/dev/FTDI.3

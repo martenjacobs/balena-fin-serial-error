@@ -1,0 +1,9 @@
+FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine:run
+
+RUN apk add --update --no-cache bash coreutils
+
+WORKDIR /usr/lib/app/
+
+COPY ./app ./
+
+ENTRYPOINT ["bash", "/usr/lib/app/start.sh"]
