@@ -8,4 +8,5 @@ services:
     devices:
       - /dev/FTDI.0:/dev/FTDI.0
       - /dev/FTDI.1:/dev/FTDI.1
+      - /dev/FTDI.2:/dev/FTDI.2
       - /dev/FTDI.3:/dev/FTDI.3
